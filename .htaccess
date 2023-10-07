@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^index/?$ index.php [NC,L]
+RewriteRule ^index/([0-9]+)/?$ index.php?id=$1 [NC,L]
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
